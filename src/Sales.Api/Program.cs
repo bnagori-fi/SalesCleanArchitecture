@@ -1,5 +1,6 @@
 using Sales.Application;
 using Sales.Infrastructure;
+using Sales.Infrastructure.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,13 +18,16 @@ var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+{ }
+app.UseSwagger();
+app.UseSwaggerUI();
+
 
 app.UseAuthorization();
 
 app.MapControllers();
+
+// Initialize and Seed database
+await app.MigrateDatabaseAsync();
 
 app.Run();
