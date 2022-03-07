@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Sales.Application.Features.Sales.Command.UpdateSales;
 using Sales.Application.Features.Sales.Queries.GetSalesByRegion;
 
 namespace Sales.Api.Controllers
@@ -23,6 +24,16 @@ namespace Sales.Api.Controllers
             var query = new GetSalesByRegionQuery(region);
             var salesByRegion = await mediator.Send(query);
             return Ok(salesByRegion);
+        }
+
+
+        [HttpPut(Name = "UpdateSalesRecord")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<ActionResult> UpdateSalesRecord([FromBody] UpdateSalesCommand command)
+        {
+            await mediator.Send(command);
+            return NoContent();
         }
     }
 }
