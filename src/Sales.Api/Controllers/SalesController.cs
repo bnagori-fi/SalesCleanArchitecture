@@ -1,5 +1,4 @@
 ﻿using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Sales.Application.Features.Sales.Command.UpdateSales;
 using Sales.Application.Features.Sales.Queries.GetSalesByRegion;
