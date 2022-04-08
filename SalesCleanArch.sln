@@ -3,15 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32126.317
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sales.Domain", "src\Sales.Domain\Sales.Domain.csproj", "{BF4C107C-63A2-4AAC-8106-0EB1B68159BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sales.Domain", "src\Sales.Domain\Sales.Domain.csproj", "{BF4C107C-63A2-4AAC-8106-0EB1B68159BA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9B26CBE6-CB9F-4EAC-B9D8-BDBFBBF17CF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sales.Application", "src\Sales.Application\Sales.Application.csproj", "{2C8AD0F2-CAEC-416A-ABDD-F99B5FAAAE34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sales.Application", "src\Sales.Application\Sales.Application.csproj", "{2C8AD0F2-CAEC-416A-ABDD-F99B5FAAAE34}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sales.Api", "src\Sales.Api\Sales.Api.csproj", "{FD9FC3A2-B8A4-4AC1-9BBF-5A82DE6E3087}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sales.Api", "src\Sales.Api\Sales.Api.csproj", "{FD9FC3A2-B8A4-4AC1-9BBF-5A82DE6E3087}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sales.Infrastructure", "src\Sales.Infrastructure\Sales.Infrastructure.csproj", "{35405F1B-CDBB-403D-8E0E-52BFB54695BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sales.Infrastructure", "src\Sales.Infrastructure\Sales.Infrastructure.csproj", "{35405F1B-CDBB-403D-8E0E-52BFB54695BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{7033B91D-DBD1-44DD-8724-B63B0841AD58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sales.Api.Test", "test\Sales.Api.Test\Sales.Api.Test.csproj", "{18459451-8C60-4761-8039-F2674625BFCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sales.Test.Common", "test\Sales.Test.Common\Sales.Test.Common.csproj", "{9149A1FB-43D8-497C-8CA5-2122A6602524}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +41,14 @@ Global
 		{35405F1B-CDBB-403D-8E0E-52BFB54695BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35405F1B-CDBB-403D-8E0E-52BFB54695BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35405F1B-CDBB-403D-8E0E-52BFB54695BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18459451-8C60-4761-8039-F2674625BFCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18459451-8C60-4761-8039-F2674625BFCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18459451-8C60-4761-8039-F2674625BFCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18459451-8C60-4761-8039-F2674625BFCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9149A1FB-43D8-497C-8CA5-2122A6602524}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9149A1FB-43D8-497C-8CA5-2122A6602524}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9149A1FB-43D8-497C-8CA5-2122A6602524}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9149A1FB-43D8-497C-8CA5-2122A6602524}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +58,8 @@ Global
 		{2C8AD0F2-CAEC-416A-ABDD-F99B5FAAAE34} = {9B26CBE6-CB9F-4EAC-B9D8-BDBFBBF17CF5}
 		{FD9FC3A2-B8A4-4AC1-9BBF-5A82DE6E3087} = {9B26CBE6-CB9F-4EAC-B9D8-BDBFBBF17CF5}
 		{35405F1B-CDBB-403D-8E0E-52BFB54695BB} = {9B26CBE6-CB9F-4EAC-B9D8-BDBFBBF17CF5}
+		{18459451-8C60-4761-8039-F2674625BFCF} = {7033B91D-DBD1-44DD-8724-B63B0841AD58}
+		{9149A1FB-43D8-497C-8CA5-2122A6602524} = {7033B91D-DBD1-44DD-8724-B63B0841AD58}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {31923655-0F77-4A5A-9065-0B5C38ED231C}
