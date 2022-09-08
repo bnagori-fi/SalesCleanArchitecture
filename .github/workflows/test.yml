@@ -26,7 +26,9 @@ jobs:
       output2: ${{ steps.step2.outputs.test }}
     steps:
       - id: step1
-        run: echo "::set-output name=test::hello"
+        run: |
+          echo "::set-output name=test1::hello"
+          echo "::set-output name=test2::my"
       - id: step2
         run: echo "::set-output name=test::world"
   job2:
@@ -34,6 +36,6 @@ jobs:
     needs: job1
     steps:
       - run: |
-          echo ${{needs.job1.outputs[{{$env.prop}}]}} 
-          echo ${{needs.job1.outputs.output2}}
+          echo ${{ needs.job1.outputs.output1 }} 
+          echo ${{ needs.job1.outputs.output2 }}
 
